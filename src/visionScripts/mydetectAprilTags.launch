@@ -1,0 +1,9 @@
+<launch>
+  <!-- AprilTag Detection Node -->
+  <node pkg="apriltag_ros" type="continuous_detector" name="apriltag_ros_continuous_detector" output="screen">
+    <param name="camera_topic" value="/camera/color/image_raw"/>
+    <param name="camera_info_topic" value="/camera/color/camera_info"/>
+    <rosparam command="load" file="$(find apriltag_ros)/config/settings.yaml"/>
+    <rosparam command="load" file="$(find apriltag_ros)/config/tags.yaml"/>
+  </node>
+</launch>

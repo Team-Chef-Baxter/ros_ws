@@ -1,0 +1,1 @@
+log file: /home/bhl2/.ros/log/c73b68de-7b85-11ef-8d99-cdb4ed4b57a4/urdf_spawner-5*.log
